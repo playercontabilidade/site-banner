@@ -446,6 +446,46 @@ ul {
   color: var(--yellow);
 }
 
+/* Banner "Envie seu currículo" em telas pequenas */
+@media (max-width: 600px) {
+  .section-email {
+    padding: 32px 0;
+  }
+
+  .email-cta {
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .email-text {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .email-arrow {
+    font-size: 1.25rem;
+    transform: rotate(90deg); /* seta para baixo em layout vertical */
+  }
+
+  .email-address {
+    font-size: 0.95rem;
+    word-break: break-all; /* evita overflow do e-mail longo */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .email-text {
+    font-size: 1rem;
+  }
+
+  .email-address {
+    font-size: 0.875rem;
+  }
+}
+
 
 /* ===== Footer ===== */
 .footer {
